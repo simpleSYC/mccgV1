@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>MCGC</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="M%20Comcept_files/EXTRA/BIZprt/css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="M%20Comcept_files/CSS/w3.css">
+<link rel="stylesheet" href="M%20Comcept_files/CSS/css.css">
+
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/card.min.css'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/container.min.css'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.min.css'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css'/>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/placeholder.min.css'/>
+  
+  
+
+		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<link rel="stylesheet" type="text/css" href="M%20Comcept_files/EXTRA/miniBLOG/css/style.css">
+
+
+
+
+  <link rel="stylesheet" href="M%20Comcept_files/CSS/css/socialfloating.css">
+
+</head><body  onload="rcl();"  class="bg-dark">
+
+	
+	
+<div class="bgimg w3-display-container w3-text-white">
+
+<img src="M%20Comcept_files/IMG/bcg.jpg" class="bgimg w3-display-middle" style="position:fixed;" >
+
+
+  <div class="w3-display-middle w3-jumbo">
+  
+  <h3 class="w3-wide"><b>
+<img style="width:250px;height:250px;" id="lgo" src="M%20Comcept_files/IMG/MClogo1000.png">
+	</b></h3>
+  
+  </div>
+  
+  
+ <div class="w3-display-topright w3-container w3-xlarge">  
+ <p><button onclick="om();" class="w3-button w3-black">Leistung</button></p>
+ </div>  
+  <div class="w3-display-topleft w3-container w3-xlarge">  
+   <p><button onclick="om(M_mb);" class="w3-button w3-black">impresium</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container  w3-xlarge">
+  <p><button onclick="om(M_bp);" class="w3-button w3-black">Biznise partners</button></p>
+  <p><button onclick="om(M_ct);" class="w3-button w3-black">contact</button></p>
+ 
+  </div>
+    <div class="w3-display-bottomright w3-container  w3-xlarge">
+  <p><button  onclick="om(M_co);"  class="w3-button w3-black">Order chek</button></p>
+ 
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="ChekOrder" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="cm(this);" class="w3-button w3-display-topright w3-large">x</span>	  
+  <h1>bestelung  chek<h1>
+    </div>
+
+	
+
+  <div class="">
+	  <br>
+<button id="CEKEROT"  class="w3-button w3-gray" style="width:33%;position: relative;left: 50%;transform: translate(-50%,-50%);" onclick="showHint();" >Chek order</button>
+
+  <ul class="w3-ul ">
+        <li class="w3-padding-16">
+          <span class="w3-left w3-margin-right" style="width:32%">date of order :</span>
+          <input type="text" id="txt0" placeholder="27/09/20" ><br>
+          <br>
+        </li>
+        <li class="w3-padding-16">
+          <span class="w3-left w3-margin-right" style="width:32%">Bestelung#ID</span>
+          <input type="text" id="txt1" placeholder="123@ABC" ><br>
+          <br>
+        </li> 
+		  <li class="w3-padding-16">
+          <span class="w3-left w3-margin-right" style="width:32%">prais &euro;:</span>
+         <input type="text" id="txt2" placeholder="12.34"><br>
+          <br>
+        </li> 
+      </ul>
+    
+	</div>
+<br>
+<span id="demoS"></span>
+<br>
+<p id="REZLUTAT"></p>
+<p id="ARTIKLI"></p>
+<p id="STATUS"></p>
+<p id="Pstatus"></p>
+
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="cm(this);" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div><div class="w3-container">
+	
+<div class="mY"><div class="LS8  1yb VICjCf" tabindex="-1"><div class="hJDwNd-AhqUyc-qWD73c purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc"><div class="JNdkSc-SmKAyb"><div class="" jscontroller="sGwD4d" jsaction="zXBUYb:zTPCnb;oc1XGd:Qxe3nd;" jsname="F57UId"><div class="oKdM2c Kzv0Me"><div id="h.p_t69QJWSdRFJH" class="hJDwNd-AhqUyc-qWD73c jXK9ad D2fZ2 OjCsFc wHaque"><div class="jXK9ad-SmKAyb"><div class="tyJCtd OWlOyc baZpAe"><div jscontroller="VYKRW" jsaction="rcuQ6b:rcuQ6b;"><div class="WIdY2d M1aSXe">
+</div><table  style="width:100%;text-align:left;">
+
+    <tr ><span style="float:left;">Kirchgasse 3 </span><span style="float:right;" >74397 Pfaffenhofen </span></tr>
+    <tr style="width:100%;" >
+	<iframe style="width:100%;" jsname="L5Fo6c" class="YMEQtf" sandbox="allow-scripts allow-popups allow-forms allow-same-origin allow-popups-to-escape-sandbox" aria-label="Map, Kirchgasse 3" src="https://maps-api-ssl.google.com/maps?hl=en-US&amp;ll=49.063975,8.975472&amp;output=embed&amp;q=Kirchgasse+3,+74397+Pfaffenhofen,+Germany+(Kirchgasse+3)&amp;z=16" allowfullscreen="" frameborder="0"></iframe>
+	</tr>
+    <tr ><p> ecommerc.mcgc@gmil.com </p><p style="text-align:right;top:-35px;position:relative;"> 01531 4566 9879 </p></tr>
+ 
+  </table>
+
+
+</div></div></div></div></div></div></div></div></div></div>
+
+  
+    </div>
+  </div>
+</div>
+
+
+<div id="MINIblog" class="w3-modal">
+ <div class="w3-modal-content w3-animate-zoom">
+<div class="w3-container w3-black"><span onclick="cm(this);" class="w3-button w3-display-topright w3-large">x</span>
+<h1>impresium & miniblog</h1></div>
+<div class="timeLine" style="background-color: dimgray;"><div  class="row" >
+<div class="lineHeader hidden-sm hidden-xs"></div>
+<div class="lineFooter hidden-sm hidden-xs"></div>
+
+  <div id="PST">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item"><div class="caption"><div class="star center-block"><span class="h3">27</span><span>Jan</span><span>1990</span></div><div class="image"><img src="https://www.w3schools.com/w3images/mac.jpg"><div class="title"><h2><span><span/><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2></div></div><div class="textContent"><p class="lead">Hi, this</p></div></div></div>  
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item"><div class="caption"><div class="star center-block"><span class="h3">27</span><span>Jan</span><span>1990</span></div><div class="image"><img src="https://www.w3schools.com/w3images/mac.jpg"><div class="title"><h2><span><span/><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2></div></div><div class="textContent"><p class="lead">Hi, this</p></div></div></div>  
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item"><div class="caption"><div class="star center-block"><span class="h3">27</span><span>Jan</span><span>1990</span></div><div class="image"><img src="https://www.w3schools.com/w3images/mac.jpg"><div class="title"><h2><span><span/><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2></div></div><div class="textContent"><p class="lead">Hi, this</p></div></div></div>  
+
+
+ </div>
+
+</div></div></div></div>
+
+	
+<!-- ova e biznis partners--->
+<div id="bizPARTNERS" class="w3-modal">
+ <div id="edt" class="w3-animate-zoom">
+    <div class="container" style="background-color: blanchedalmond;" >
+      <span onclick="cm(this);" class="w3-button w3-large" style="float: right;color: red;" >X</span>
+      <h2 id="LNKtxt" style="text-decoration: underline;"></h2>
+      <!-- Tabs -->
+      <ul id="BIZtab" class="tab-nav">
+        <li onclick="gTX(0);" class="gold"><a></a></li>
+        <li onclick="gTX(1);" class="blue"><a></a></li>
+        <li onclick="gTX(2);" class="GhostWhite"><a></a></li>
+        <li onclick="gTX(3);" class="GRAY"><a></a></li>
+        <li onclick="gTX(4);" class="green"><a></a></li>
+        <li onclick="gTX(5);" class="bg-dark"><a></a></li>
+        <li onclick="gTX(6);" class="magenta"><a></a></li>
+      </ul>
+
+      <!-- Content -->
+	  <div class="content active"><h1></h1><p></p></div>
+      <div class="content"><h1></h1><p></p></div>
+      <div class="content"><h1></h1><p></p></div>
+      <div class="content"><h1></h1><p></p></div>
+      <div class="content"><h1></h1><p></p></div>
+      <div class="content"><h1></h1><p></p></div>
+      <div class="content"><h1></h1><p></p></div>
+
+
+</div></div></div>
+
+
+<script src="M%20Comcept_files/JS/js/jquery.socialfloating.js"></script>
+<script src="M%20Comcept_files/JS/js/demo.js"></script>
+  
+<script type="text/javascript"  src="M%20Comcept_files/TBL/TBLtxt.js"></script>
+<script type="text/javascript"  src="M%20Comcept_files/TBL/TBL.js"></script>
+
+<script type="text/javascript"  src="M%20Comcept_files/JS/Funkci.js"></script>
+<script type="text/javascript"  src="M%20Comcept_files/EXTRA/BIZprt/js/scripts.js"></script>
+
+
+<script type="text/javascript"  src="M%20Comcept_files/EXTRA/miniBLOG/js/timeLine.js"></script>
+<script type="text/javascript"  src="M%20Comcept_files/EXTRA/miniBLOG/js/script.js"></script>
+
+</body></html>
