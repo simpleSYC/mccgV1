@@ -181,29 +181,21 @@ function desifriranje(OBJEKTOT,icrementot){//OX   myObj[i]
 			}
 			
 			
-			
-			
-		
-		//	if(TesTer1==UBACENOprais){	
 				document.getElementById("REZLUTAT").innerHTML = "This Bestelung#ID : "+TesTer+" is in our database";
 				document.getElementById("ARTIKLI").innerHTML = "ordered products:<br>"+TesTer1; 
 				document.getElementById("STATUS").innerHTML = "status situation is: <br> "+TesTer2;
 				document.getElementById("Pstatus").innerHTML = "<br>datum in my system: "+ TesTer3;
 
 
-
-	//			}
-		//	}
-	
-
-
-	}else{
-document.getElementById("REZLUTAT").innerHTML = "unexsist or/and not payed yet";
-document.getElementById("ARTIKLI").innerHTML = "";
-document.getElementById("STATUS").innerHTML = "";
-document.getElementById("Pstatus").innerHTML = "";
-
-}}}
+	   }
+   
+   }else{
+    document.getElementById("REZLUTAT").innerHTML = "unexsist or/and not payed yet";
+    document.getElementById("ARTIKLI").innerHTML = "";
+    document.getElementById("STATUS").innerHTML = "";
+    document.getElementById("Pstatus").innerHTML = "";}
+   
+}
 
 
 ///document.getElementById("demoS").innerHTML ="sumata vkupno e = "+ OXsuma;
