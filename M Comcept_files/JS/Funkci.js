@@ -210,9 +210,9 @@ document.getElementById("Pstatus").innerHTML = "";
 
 
 
-var spase;
+
 var PP0; var PP1;
-function codira (){DECbid="";spase="";OSD=0;
+function codira (){DECbid="";OSD=0;
  // lokalni za parsiranej na menavaje na takvite  p0 i p1 za pharsint
 
 
@@ -221,11 +221,10 @@ document.getElementById("STATUS").innerHTML="";
 
 OX=UBACENOdata+UBACENObestelungID+UBACENOprais;
 
-for(i=0;i<23-OX.length;i++)
-{spase=spase+" ";}	
+var txtPTOST=UBACENOdata+UBACENObestelungID+UBACENOprais+"                             ";
 
-OX=UBACENOdata+UBACENObestelungID+UBACENOprais+spase;
-	
+
+OX=txtPTOST.slice(0,23);
 	
 
  //sifrata
